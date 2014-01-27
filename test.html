@@ -72,7 +72,39 @@
         </div>
         <div class="tab-pane" id="convert">
           <legend>Convert</legend>
-          <p>Convert scraped data to NAF.</p>
+          <!-- Text input-->
+        <div class="control-group">
+          <label class="control-label" for="Test page URL">URL of a news article from the website of interest.</label>
+          <div class="controls">
+            <input id="Test page URL" name="Test page URL" type="text" placeholder="URL" class="input-xlarge" required="">
+            
+          </div>
+        </div>
+
+        <!-- Textarea -->
+        <div class="control-group">
+          <label class="control-label" for="python_code">Python code to extract creation date and author from article</label>
+          <div class="controls">                     
+            <textarea id="python_code" name="python_code"># Your Python goes here</textarea>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="control-group">
+          <label class="control-label" for="test_button"></label>
+          <div class="controls">
+            <button id="test_button" name="test_button" class="btn btn-primary">Run code on site</button>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="control-group">
+          <label class="control-label" for="process_button"></label>
+          <div class="controls">
+            <button id="process_button" name="process_button" class="btn btn-primary">Process NAF</button>
+          </div>
+        </div>
+
         </div>
 
         <div class="tab-pane" id="transfer">
