@@ -15,6 +15,27 @@
   </head>
   <body>
     <h1>Test scraper UI</h1>
+    <div id="content">
+      <!-- Borrowed from Bootstrap docs and http://stackoverflow.com/a/9630641 -->
+      <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="active"><a href="#scrape" data-toggle="tab">Scrape</a></li>
+        <li><a href="#convert" data-toggle="tab">Convert</a></li>
+        <li><a href="#transfer" data-toggle="tab">Upload/Download</a></li>
+      </ul>
+    <div id="my-tab-content" class="tab-content">
+        <div class="tab-pane active" id="scrape">
+          <h2>Scrape</h2>
+          <p>Scrape placeholder</p>
+        </div>
+        <div class="tab-pane" id="convert">
+          <h2>Convert</h2>
+          <p>Convert placeholder</p>
+        </div>
+        <div class="tab-pane" id="transfer">
+          <h2>Transfer</h2>
+          <p>Transfer placeholder</p>
+        </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
