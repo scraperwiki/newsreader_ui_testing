@@ -25,20 +25,48 @@
     <div id="my-tab-content" class="tab-content">
         <div class="tab-pane active" id="scrape">
           <h2>Scrape</h2>
-          <p>Scrape placeholder</p>
-          <form class="form-horizontal">
-            <fieldset>
-            <!-- Text input-->
-            <div class="control-group">
-              <label class="control-label" for="urlinput">URL</label>
-              <div class="controls">
-                <input id="urlinput" name="urlinput" type="text" placeholder="http://someurl..." class="input-xlarge">
-                <p class="help-block">Enter the URL you wish to scrape.</p>
-              </div>
-            </div>
+          <p>Scrape a news website.</p>
+    <form class="form-horizontal">
+    <fieldset>
 
-            </fieldset>
-            </form>
+    <!-- Text input-->
+    <div class="control-group">
+      <label class="control-label" for="url_input">URL</label>
+      <div class="controls">
+        <input id="url_input" name="url_input" type="text" placeholder="http://someurl..." class="input-xlarge" required="">
+        <p class="help-block">Enter the URL you wish to scrape.</p>
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+      <label class="control-label" for="allow_filter">Allow filter</label>
+      <div class="controls">
+        <input id="allow_filter" name="allow_filter" type="text" placeholder="Regex" class="input-xlarge">
+        <p class="help-block">Enter a regex that scraped URLs must match (optional).</p>
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+      <label class="control-label" for="deny_filter">Deny filter</label>
+      <div class="controls">
+        <input id="deny_filter" name="deny_filter" type="text" placeholder="Regex" class="input-xlarge">
+        <p class="help-block">Enter a regex that scraped URLs must NOT match (optional).</p>
+      </div>
+    </div>
+
+    <!-- Button (Double) -->
+    <div class="control-group">
+      <label class="control-label" for="go_button"></label>
+      <div class="controls">
+        <button id="go_button" name="go_button" class="btn btn-primary">Scrape!</button>
+        <button id="download_button" name="download_button" class="btn btn-danger">Download JSONlines</button>
+      </div>
+    </div>
+
+    </fieldset>
+    </form>
 
         </div>
         <div class="tab-pane" id="convert">
