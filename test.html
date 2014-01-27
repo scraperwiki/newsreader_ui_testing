@@ -24,7 +24,7 @@
       </ul>
     <div id="my-tab-content" class="tab-content">
         <div class="tab-pane active" id="scrape">
-          <h2>Scrape</h2>
+          <legend>Scrape</legend>
           <p>Scrape a news website.</p>
     <form class="form-horizontal">
     <fieldset>
@@ -64,19 +64,56 @@
         <button id="download_button" name="download_button" class="btn btn-danger">Download JSONlines</button>
       </div>
     </div>
-
+    </br>
+    Scrape status:
     </fieldset>
     </form>
 
         </div>
         <div class="tab-pane" id="convert">
-          <h2>Convert</h2>
-          <p>Convert placeholder</p>
+          <legend>Convert</legend>
+          <p>Convert scraped data to NAF.</p>
         </div>
+
         <div class="tab-pane" id="transfer">
-          <h2>Transfer</h2>
-          <p>Transfer placeholder</p>
+        <!-- Form Name -->
+        <legend>Transfer</legend>
+
+        <!-- Text input-->
+        <div class="control-group">
+          <label class="control-label" for="vm_ip">Virtual machine IP address</label>
+          <div class="controls">
+            <input id="vm_ip" name="vm_ip" type="text" placeholder="192.168.0.1" class="input-xlarge" required="">
+            <p class="help-block">Enter the IP address</p>
+          </div>
         </div>
+
+        <!-- Button -->
+        <div class="control-group">
+          <label class="control-label" for="submit_button"></label>
+          <div class="controls">
+            <button id="submit_button" name="submit_button" class="btn btn-primary">Submit scraped data to VM</button>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="control-group">
+          <label class="control-label" for="download_button"></label>
+          <div class="controls">
+            <button id="download_button" name="download_button" class="btn btn-primary">Download processed data from VM</button>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="control-group">
+          <label class="control-label" for="vm_status"></label>
+          <div class="controls">
+            <button id="vm_status" name="vm_status" class="btn btn-primary">Get VM status</button>
+          </div>
+        </div>
+        </br>
+        VM status:
+    </div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
